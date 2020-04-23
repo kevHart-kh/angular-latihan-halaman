@@ -10,4 +10,9 @@ export class AddComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  getNama(){
+    document.getElementById('jurusan').value='a';
+    
+  }
 }

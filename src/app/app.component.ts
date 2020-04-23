@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { AddComponent } from './add/add.component';
 
 @Component({
   selector: 'my-app',
@@ -8,9 +9,22 @@ import { Router } from '@angular/router';
 })
 export class AppComponent  {
   name = 'Angular';
-  constructor(private router:Router){}
+  jurusan: string[];
+  keterangan: string[];
+
+
+  constructor(private router:Router){
+    
+  }
+
+
   LOGIN(){
     this.router.navigate(['/login']);
+  }
+
+  addData(){
+    //AddComponent:
+    
   }
 
 }
